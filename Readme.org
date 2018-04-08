@@ -1,0 +1,4 @@
+* Purpose
+
+This repository is used for the automated build of a docker image
+containing [[https://github.com/jamhall/s3rver][s3rver]] so it can be used for local testing against [[https://aws.amazon.com/s3/getting-started/][AWS S3]].
