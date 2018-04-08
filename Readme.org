@@ -2,3 +2,20 @@
 
 This repository is used for the automated build of a docker image
 containing [[https://github.com/jamhall/s3rver][s3rver]] so it can be used for local testing against [[https://aws.amazon.com/s3/getting-started/][AWS S3]].
+
+* Usage
+  
+** Run Container
+   #+BEGIN_SRC shell
+   docker run --rm --name s3-local -d -p 8080:8080 dfrkp/docker-s3rver
+   #+END_SRC
+
+** Create Bucket
+   #+BEGIN_SRC shell
+   aws  s3 mb s3://foo --endpoint-url "http://localhost:8080"
+   #+END_SRC
+   
+** List Bucket
+   #+BEGIN_SRC shell
+   aws  s3 ls s3:// --endpoint-url "http://localhost:8080"   
+   #+END_SRC
