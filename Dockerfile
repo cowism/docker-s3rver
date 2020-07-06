@@ -1,6 +1,6 @@
 FROM node:alpine
 
-## Update by pushing update to github on 26-Apr-20
+## Update by pushing update to github on 06-Jul-20
 
 RUN set -x \
     && npm install -g s3-proxy s3rver\
