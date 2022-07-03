@@ -5,7 +5,10 @@ FROM node:alpine
 RUN set -x \
     && npm install -g s3-proxy s3rver\
     && mkdir -p /data
+    && mkdir -p /config
+
+COPY cfg /config
 
 ENTRYPOINT ["s3rver"]
 
-CMD ["-d", "/data", "-p", "8080", "-a", "0.0.0.0", "--configure-bucket", "localbucket"]
+CMD ["-d", "/data", "-p", "8080", "-a", "0.0.0.0", "--configure-bucket", "localbucket", "/config/cors.xml", "/config/website.xml"]
