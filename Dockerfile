@@ -11,4 +11,4 @@ COPY cfg /config
 
 ENTRYPOINT ["s3rver"]
 
-CMD ["-d", "/data", "-p", "8080", "-a", "0.0.0.0", "--configure-bucket", "localbucket", "/config/cors.xml", "/config/website.xml"]
+CMD ["-d", "/data", "-p", "8080", "-a", "0.0.0.0", "--configure-bucket", "test-bucket", "/config/cors.xml", "/config/website.xml"]
