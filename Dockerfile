@@ -4,7 +4,7 @@ FROM node:alpine
 
 RUN set -x \
     && npm install -g s3-proxy s3rver\
-    && mkdir -p /data
+    && mkdir -p /data\
     && mkdir -p /config
 
 COPY cfg /config
