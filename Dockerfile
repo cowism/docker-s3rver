@@ -8,4 +8,4 @@ RUN set -x \
 
 ENTRYPOINT ["s3rver"]
 
-CMD ["-d", "/data", "-p", "8080", "-a", "0.0.0.0"]
+CMD ["-d", "/data", "-p", "8080", "-a", "0.0.0.0", "--configure-bucket", "localbucket"]
