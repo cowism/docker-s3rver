@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:slim
 
 ## Update by pushing update to github on 05-Dec-20
 
