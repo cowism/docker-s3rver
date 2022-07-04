@@ -11,4 +11,4 @@ COPY cfg /config
 
 ENTRYPOINT ["s3rver"]
 
-CMD ["-d", "/data", "-p", "8080", "-a", "0.0.0.0", "--configure-bucket", "local-bucket", "-v"]
+CMD ["-d", "/data", "-p", "8888", "-a", "0.0.0.0", "--configure-bucket", "local-bucket"]
