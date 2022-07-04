@@ -3,7 +3,7 @@ FROM node:alpine
 ## Update by pushing update to github on 05-Dec-20
 
 RUN set -x \
-    && npm install -g s3-proxy s3rver\
+    && npm install -g s3rver\
     && mkdir -p /data\
     && mkdir -p /config
 
